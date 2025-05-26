@@ -2,12 +2,6 @@ pipeline {
   agent any
 
   stages {
-    stage('Clone Repository') {
-      steps {
-        git 'https://github.com/RichmanElikor/my-node-app.git'
-      }
-    }
-
     stage('Build Docker Image') {
       steps {
         script {
