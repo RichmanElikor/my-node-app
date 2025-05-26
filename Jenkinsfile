@@ -19,7 +19,7 @@ pipeline {
     stage('Run Docker Container') {
       steps {
         script {
-          sh 'docker run -d -p 3000:3000 --name my-node-app-contaner my-node-app '
+          sh 'docker run -d -p 3000:3000 --name my-node-app-container my-node-app '
         }
       }
     }
